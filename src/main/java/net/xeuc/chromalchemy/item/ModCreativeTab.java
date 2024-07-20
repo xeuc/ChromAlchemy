@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xeuc.chromalchemy.ChromAlchemy;
+import net.xeuc.chromalchemy.block.ModBlocks;
 
 public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -22,6 +23,11 @@ public class ModCreativeTab {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.CHROMA.get());
                         pOutput.accept(ModItems.RAW_CHROMA.get());
+                        pOutput.accept(ModBlocks.CHROMA_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_CHROMA_BLOCK.get());
+                        pOutput.accept(ModBlocks.CHROMA_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_CHROMA_ORE.get());
+
                         pOutput.accept(Items.DIAMOND);
                     })
                     .build());

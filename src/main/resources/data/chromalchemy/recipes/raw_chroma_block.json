@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chromalchemy:raw_chroma"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "chromalchemy:raw_chroma_block"
+  }
+}

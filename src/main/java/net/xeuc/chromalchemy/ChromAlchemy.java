@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.xeuc.chromalchemy.block.ModBlocks;
 import net.xeuc.chromalchemy.item.ModCreativeTab;
 import net.xeuc.chromalchemy.item.ModItems;
 import org.slf4j.Logger;
@@ -66,6 +67,7 @@ public class ChromAlchemy {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeTab.register(modEventBus);
 
 

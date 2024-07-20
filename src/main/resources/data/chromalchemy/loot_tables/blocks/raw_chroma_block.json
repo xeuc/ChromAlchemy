@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus-rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chromalchemy:raw_chroma_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chromalchemy:blocks/raw_chroma_block"
+}

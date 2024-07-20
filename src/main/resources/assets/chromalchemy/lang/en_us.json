@@ -1,5 +1,9 @@
 {
   "item.chromalchemy.chroma": "Chroma",
   "item.chromalchemy.raw_chroma": "Raw Chroma",
-  "creativetab.chroma_tab": "Chroma"
+  "block.chromalchemy.chroma_block": "Block of Chroma",
+  "block.chromalchemy.raw_chroma_block": "Block of Raw Chroma",
+  "block.chromalchemy.chroma_ore": "Chroma Ore",
+  "block.chromalchemy.deepslate_chroma_ore": "Deepslate Chroma Ore",
+  "creativetab.chroma_tab": "ChromAlchemy"
 }
