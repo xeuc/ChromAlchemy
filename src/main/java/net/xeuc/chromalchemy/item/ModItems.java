@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xeuc.chromalchemy.ChromAlchemy;
+import net.xeuc.chromalchemy.item.custom.MinionScepterItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -15,6 +16,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CHROMA = ITEMS.register("raw_chroma",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MINION_SCEPTER = ITEMS.register("minion_scepter",
+            () -> new MinionScepterItem(new Item.Properties().durability(20)));
+
+    public static final RegistryObject<Item> COOKED_EGG = ITEMS.register("cooked_egg",
+            () -> new Item(new Item.Properties().food(ModFoods.COOKED_EGG)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

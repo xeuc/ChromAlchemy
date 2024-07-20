@@ -27,8 +27,11 @@ public class ModCreativeTab {
                         pOutput.accept(ModBlocks.RAW_CHROMA_BLOCK.get());
                         pOutput.accept(ModBlocks.CHROMA_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_CHROMA_ORE.get());
+                        pOutput.accept(ModItems.MINION_SCEPTER.get());
+                        pOutput.accept(ModBlocks.XP_PROVIDER.get());
+                        pOutput.accept(ModItems.COOKED_EGG.get());
 
-                        pOutput.accept(Items.DIAMOND);
+                        // pOutput.accept(Items.DIAMOND);
                     })
                     .build());
 

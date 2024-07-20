@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xeuc.chromalchemy.ChromAlchemy;
+import net.xeuc.chromalchemy.block.custom.XpProviderBlock;
 import net.xeuc.chromalchemy.item.ModItems;
 
 import java.util.function.Supplier;
@@ -32,6 +33,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock( UniformInt.of(9, 16),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3f)));
 
+    public static final RegistryObject<Block> XP_PROVIDER = registerBlock("xp_provider",
+            () -> new XpProviderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANVIL).sound(SoundType.METAL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

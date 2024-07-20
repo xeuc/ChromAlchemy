@@ -3,6 +3,7 @@
     "chromalchemy:chroma_block",
     "chromalchemy:raw_chroma_block",
     "chromalchemy:chroma_ore",
-    "chromalchemy:deepslate_chroma_ore"
+    "chromalchemy:deepslate_chroma_ore",
+    "chromalchemy:xp_provider"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chromalchemy:chroma"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "chromalchemy:xp_provider"
+  }
+}

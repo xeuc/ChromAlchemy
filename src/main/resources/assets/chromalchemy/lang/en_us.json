@@ -4,6 +4,9 @@
   "block.chromalchemy.chroma_block": "Block of Chroma",
   "block.chromalchemy.raw_chroma_block": "Block of Raw Chroma",
   "block.chromalchemy.chroma_ore": "Chroma Ore",
+  "item.chromalchemy.minion_scepter": "Minion Scepter",
   "block.chromalchemy.deepslate_chroma_ore": "Deepslate Chroma Ore",
-  "creativetab.chroma_tab": "ChromAlchemy"
+  "block.chromalchemy.xp_provider": "XP Provider",
+  "creativetab.chroma_tab": "ChromAlchemy",
+  "item.chromalchemy.cooked_egg": "Cooked Egg"
 }
