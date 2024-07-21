@@ -30,6 +30,7 @@ public class ModCreativeTab {
                         pOutput.accept(ModItems.MINION_SCEPTER.get());
                         pOutput.accept(ModBlocks.XP_PROVIDER.get());
                         pOutput.accept(ModItems.COOKED_EGG.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
 
                         // pOutput.accept(Items.DIAMOND);
                     })

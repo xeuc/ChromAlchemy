@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.xeuc.chromalchemy.ChromAlchemy;
+import net.xeuc.chromalchemy.item.custom.FuelItem;
 import net.xeuc.chromalchemy.item.custom.MinionScepterItem;
 
 public class ModItems {
@@ -22,6 +23,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKED_EGG = ITEMS.register("cooked_egg",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_EGG)));
+
+    public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 200));
 
 
     public static void register(IEventBus eventBus) {
