@@ -20,6 +20,5 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Items.RED_MINERAL).add(Items.REDSTONE);
-
     }
 }

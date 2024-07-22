@@ -20,7 +20,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Blocks.RED_ORE).add(Blocks.REDSTONE_ORE);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -36,6 +36,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_CHROMA_ORE.get(),
                         ModBlocks.XP_PROVIDER.get(),
                         ModBlocks.RAW_CHROMA_BLOCK.get());
-
     }
 }

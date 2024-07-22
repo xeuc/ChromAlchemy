@@ -8,7 +8,6 @@ plugins {
 
 version = mod_version
 group = mod_group_id
-mod_id="chromalchemy"
 
 base {
     archivesName = mod_id

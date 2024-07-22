@@ -3,8 +3,11 @@ package net.xeuc.chromalchemy.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.xeuc.chromalchemy.ChromAlchemy;
 import net.xeuc.chromalchemy.block.ModBlocks;
@@ -34,7 +37,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("CCC")
                 .pattern("CCC")
                 .pattern("CCC")
-                .define('S', ModItems.CHROMA.get())
+                .define('C', ModItems.CHROMA.get())
                 .unlockedBy(getHasName(ModItems.CHROMA.get()), has(ModItems.CHROMA.get()))
                 .save(recipeOutput);
 
@@ -43,7 +46,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.CHROMA_BLOCK.get()), has(ModBlocks.CHROMA_BLOCK.get()))
                 .save(recipeOutput);
 
-        // TODO: Chicken wand recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MINION_SCEPTER.get())
+                .pattern("  C")
+                .pattern(" S ")
+                .pattern("S  ")
+                .define('C', ModItems.CHROMA.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHROMA.get()), has(ModItems.CHROMA.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PINE_CONE.get())
+                .requires(Blocks.SPRUCE_LEAVES, 3)
+                .unlockedBy(getHasName(Blocks.SPRUCE_LEAVES), has(Blocks.SPRUCE_LEAVES))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
@@ -63,7 +78,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     pCookingTime, pSerializer, pRecipeFactory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pRecipeOutput, ChromAlchemy.MODID + ":" + getItemName(pResult) + pSuffix + "_" + getItemName(itemlike));
         }
-
     }
 
 }
