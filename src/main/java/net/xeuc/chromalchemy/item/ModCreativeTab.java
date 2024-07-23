@@ -31,6 +31,17 @@ public class ModCreativeTab {
                         pOutput.accept(ModBlocks.XP_PROVIDER.get());
                         pOutput.accept(ModItems.COOKED_EGG.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
+                        pOutput.accept(ModItems.SCEPTER_CHROMA.get());
+
+                        pOutput.accept(ModBlocks.CHROMA_STAIRS.get());
+                        pOutput.accept(ModBlocks.CHROMA_SLAB.get());
+                        pOutput.accept(ModBlocks.CHROMA_BUTTON.get());
+                        pOutput.accept(ModBlocks.CHROMA_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.CHROMA_FENCE.get());
+                        pOutput.accept(ModBlocks.CHROMA_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.CHROMA_WALL.get());
+                        pOutput.accept(ModBlocks.CHROMA_DOOR.get());
+                        pOutput.accept(ModBlocks.CHROMA_TRAPDOOR.get());
 
                         // pOutput.accept(Items.DIAMOND);
                     })

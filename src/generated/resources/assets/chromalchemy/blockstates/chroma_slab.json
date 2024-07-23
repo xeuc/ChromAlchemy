@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chromalchemy:block/chroma_slab"
+    },
+    "type=double": {
+      "model": "chromalchemy:block/chroma_block"
+    },
+    "type=top": {
+      "model": "chromalchemy:block/chroma_slab_top"
+    }
+  }
+}

@@ -36,5 +36,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_CHROMA_ORE.get(),
                         ModBlocks.XP_PROVIDER.get(),
                         ModBlocks.RAW_CHROMA_BLOCK.get());
+
+        this.tag(BlockTags.FENCES).add(ModBlocks.CHROMA_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES).add(ModBlocks.CHROMA_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS).add(ModBlocks.CHROMA_WALL.get());
     }
 }

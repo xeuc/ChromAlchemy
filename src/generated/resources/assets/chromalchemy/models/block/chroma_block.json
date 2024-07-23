@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "chromalchemy:block/chroma_block_down",
+    "east": "chromalchemy:block/chroma_block_east",
+    "north": "chromalchemy:block/chroma_block_north",
+    "south": "chromalchemy:block/chroma_block_south",
+    "up": "chromalchemy:block/chroma_block_up",
+    "west": "chromalchemy:block/chroma_block_west"
+  }
+}

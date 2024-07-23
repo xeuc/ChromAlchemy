@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "chromalchemy:block/chroma_block",
+    "side": "chromalchemy:block/chroma_block",
+    "top": "chromalchemy:block/chroma_block"
+  }
+}

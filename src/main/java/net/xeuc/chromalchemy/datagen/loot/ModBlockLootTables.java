@@ -23,9 +23,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.XP_PROVIDER.get());
 
         this.add(ModBlocks.CHROMA_ORE.get(),
-                block -> createOreDrop(ModBlocks.CHROMA_ORE.get()/*TODO: try `block` here*/, ModItems.CHROMA.get()));
+                block -> createOreDrop(block, ModItems.CHROMA.get()));
         this.add(ModBlocks.DEEPSLATE_CHROMA_ORE.get(),
-                block -> createOreDrop(ModBlocks.DEEPSLATE_CHROMA_ORE.get()/*TODO: try `block` here*/, ModItems.CHROMA.get()));
+                block -> createOreDrop(block, ModItems.CHROMA.get()));
+
+        this.dropSelf(ModBlocks.CHROMA_STAIRS.get());
+        this.dropSelf(ModBlocks.CHROMA_BUTTON.get());
+        this.dropSelf(ModBlocks.CHROMA_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CHROMA_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CHROMA_FENCE.get());
+        this.dropSelf(ModBlocks.CHROMA_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CHROMA_WALL.get());
+
+        this.add(ModBlocks.CHROMA_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHROMA_SLAB.get()));
+        this.add(ModBlocks.CHROMA_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CHROMA_DOOR.get()));
     }
 
     @Override

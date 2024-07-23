@@ -3,11 +3,10 @@ package net.xeuc.chromalchemy.block;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,6 +34,34 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> XP_PROVIDER = registerBlock("xp_provider",
             () -> new XpProviderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ANVIL).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> CHROMA_STAIRS = registerBlock("chroma_stairs",
+            () -> new StairBlock(ModBlocks.CHROMA_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> CHROMA_SLAB = registerBlock("chroma_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> CHROMA_BUTTON = registerBlock("chroma_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 10,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> CHROMA_PRESSURE_PLATE = registerBlock("chroma_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> CHROMA_FENCE = registerBlock("chroma_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> CHROMA_FENCE_GATE = registerBlock("chroma_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> CHROMA_WALL = registerBlock("chroma_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> CHROMA_DOOR = registerBlock("chroma_door",
+            () -> new DoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion()));
+    public static final RegistryObject<Block> CHROMA_TRAPDOOR = registerBlock("chroma_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

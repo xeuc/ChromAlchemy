@@ -9,5 +9,16 @@
   "block.chromalchemy.xp_provider": "XP Provider",
   "item.chromalchemy.pine_cone": "Pine Cone",
   "creativetab.chroma_tab": "ChromAlchemy",
-  "item.chromalchemy.cooked_egg": "Cooked Egg"
+  "item.chromalchemy.cooked_egg": "Cooked Egg",
+  "block.chromalchemy.chroma_stairs": "Chroma Stairs",
+  "block.chromalchemy.chroma_slab": "Chroma Slab",
+  "block.chromalchemy.chroma_button": "Chroma Button",
+  "block.chromalchemy.chroma_pressure_plate": "Chroma Pressure Plate",
+  "block.chromalchemy.chroma_fence": "Chroma Fence",
+  "block.chromalchemy.chroma_fence_gate": "Chroma Fence Gate",
+  "block.chromalchemy.chroma_wall": "Chroma Wall",
+  "block.chromalchemy.chroma_door": "Chroma Door",
+  "block.chromalchemy.chroma_trapdoor": "Chroma Trapdoor",
+  "item.chromalchemy.scepter_chroma": "Chroma Scepter"
+
 }

@@ -1,0 +1,7 @@
+// 1.20.6	2024-07-23T20:23:55.4725044	Tags for minecraft:block mod id chromalchemy
+c125d95acc12ac0aa6d17c44ca006fbd0d40b45e data/chromalchemy/tags/blocks/red_ore.json
+5305f0259b11528074cbd35e2553faf7816b3ad5 data/minecraft/tags/blocks/fences.json
+4a35e0aace45c1c22e9c76fe9b743c08b8525dee data/minecraft/tags/blocks/fence_gates.json
+1d9f707bf3aee554f51712b29d301b1ca5c64d38 data/minecraft/tags/blocks/mineable/pickaxe.json
+1d9f707bf3aee554f51712b29d301b1ca5c64d38 data/minecraft/tags/blocks/needs_diamond_tool.json
+464dc74bbf07bd13846df749fbcdfa116dcc3e67 data/minecraft/tags/blocks/walls.json

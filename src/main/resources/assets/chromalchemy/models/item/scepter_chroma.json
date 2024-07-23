@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "chromalchemy:item/scepter_chroma_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "chromalchemy:item/scepter_chroma_2d"
+    },
+    "ground": {
+      "parent": "chromalchemy:item/scepter_chroma_2d"
+    },
+    "fixed": {
+      "parent": "chromalchemy:item/scepter_chroma_2d"
+    }
+  }
+}
