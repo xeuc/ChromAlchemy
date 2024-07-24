@@ -1,6 +1,6 @@
 package net.xeuc.chromalchemy.item;
 
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -29,6 +29,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> SCEPTER_CHROMA = ITEMS.register("scepter_chroma",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+
+    public static final RegistryObject<Item> CHROMA_SWORD = ITEMS.register("chroma_sword",
+            () -> new SwordItem(ModToolTiers.CHROMA, new Item.Properties()));
+    public static final RegistryObject<Item> CHROMA_PICKAXE = ITEMS.register("chroma_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.CHROMA, new Item.Properties()));
+    public static final RegistryObject<Item> CHROMA_AXE = ITEMS.register("chroma_axe",
+            () -> new AxeItem(ModToolTiers.CHROMA, new Item.Properties()));
+    public static final RegistryObject<Item> CHROMA_SHOVEL = ITEMS.register("chroma_shovel",
+            () -> new ShovelItem(ModToolTiers.CHROMA, new Item.Properties()));
+    public static final RegistryObject<Item> CHROMA_HOE = ITEMS.register("chroma_hoe",
+            () -> new HoeItem(ModToolTiers.CHROMA, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

@@ -19,6 +19,11 @@
   "block.chromalchemy.chroma_wall": "Chroma Wall",
   "block.chromalchemy.chroma_door": "Chroma Door",
   "block.chromalchemy.chroma_trapdoor": "Chroma Trapdoor",
-  "item.chromalchemy.scepter_chroma": "Chroma Scepter"
+  "item.chromalchemy.scepter_chroma": "Chroma Scepter",
 
+  "item.chromalchemy.chroma_sword": "Chroma Sword",
+  "item.chromalchemy.chroma_pickaxe": "Chroma Pickaxe",
+  "item.chromalchemy.chroma_axe": "Chroma Axe",
+  "item.chromalchemy.chroma_shovel": "Chroma Shovel",
+  "item.chromalchemy.chroma_hoe": "Chroma Hoe"
 }

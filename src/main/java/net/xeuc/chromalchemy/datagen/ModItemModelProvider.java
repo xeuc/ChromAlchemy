@@ -41,7 +41,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CHROMA_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.CHROMA_FENCE_GATE);
 
+
         trapdoorItem(ModBlocks.CHROMA_TRAPDOOR);
+
+
+        handheldItem(ModItems.CHROMA_PICKAXE);
+        handheldItem(ModItems.CHROMA_SWORD);
+        handheldItem(ModItems.CHROMA_SHOVEL);
+        handheldItem(ModItems.CHROMA_AXE);
+        handheldItem(ModItems.CHROMA_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -65,6 +73,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(ChromAlchemy.MODID, "item/" + item.getId().getPath()));
     }
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(ChromAlchemy.MODID, "item/" + item.getId().getPath()));
+    }
+
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),

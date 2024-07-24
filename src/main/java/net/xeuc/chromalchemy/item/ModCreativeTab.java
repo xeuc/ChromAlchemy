@@ -32,6 +32,11 @@ public class ModCreativeTab {
                         pOutput.accept(ModItems.COOKED_EGG.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
                         pOutput.accept(ModItems.SCEPTER_CHROMA.get());
+                        pOutput.accept(ModItems.CHROMA_SHOVEL.get());
+                        pOutput.accept(ModItems.CHROMA_SWORD.get());
+                        pOutput.accept(ModItems.CHROMA_PICKAXE.get());
+                        pOutput.accept(ModItems.CHROMA_AXE.get());
+                        pOutput.accept(ModItems.CHROMA_HOE.get());
 
                         pOutput.accept(ModBlocks.CHROMA_STAIRS.get());
                         pOutput.accept(ModBlocks.CHROMA_SLAB.get());
