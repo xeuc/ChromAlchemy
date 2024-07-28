@@ -25,5 +25,10 @@
   "item.chromalchemy.chroma_pickaxe": "Chroma Pickaxe",
   "item.chromalchemy.chroma_axe": "Chroma Axe",
   "item.chromalchemy.chroma_shovel": "Chroma Shovel",
-  "item.chromalchemy.chroma_hoe": "Chroma Hoe"
+  "item.chromalchemy.chroma_hoe": "Chroma Hoe",
+
+  "item.chromalchemy.chroma_helmet": "Chroma Helmet",
+  "item.chromalchemy.chroma_chestplate": "Chroma Chestplate",
+  "item.chromalchemy.chroma_leggings": "Chroma Leggings",
+  "item.chromalchemy.chroma_boots": "Chroma Boots"
 }

@@ -48,6 +48,11 @@ public class ModCreativeTab {
                         pOutput.accept(ModBlocks.CHROMA_DOOR.get());
                         pOutput.accept(ModBlocks.CHROMA_TRAPDOOR.get());
 
+                        pOutput.accept(ModItems.CHROMA_HELMET.get());
+                        pOutput.accept(ModItems.CHROMA_CHESTPLATE.get());
+                        pOutput.accept(ModItems.CHROMA_LEGGINGS.get());
+                        pOutput.accept(ModItems.CHROMA_BOOTS.get());
+
                         // pOutput.accept(Items.DIAMOND);
                     })
                     .build());

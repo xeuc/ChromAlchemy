@@ -3,10 +3,12 @@ package net.xeuc.chromalchemy.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.xeuc.chromalchemy.ChromAlchemy;
+import net.xeuc.chromalchemy.item.ModItems;
 import net.xeuc.chromalchemy.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -20,5 +22,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Items.RED_MINERAL).add(Items.REDSTONE);
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.CHROMA_HELMET.get(),
+                        ModItems.CHROMA_CHESTPLATE.get(),
+                        ModItems.CHROMA_LEGGINGS.get(),
+                        ModItems.CHROMA_BOOTS.get());
     }
 }

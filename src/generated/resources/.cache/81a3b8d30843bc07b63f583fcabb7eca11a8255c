@@ -1,2 +1,3 @@
-// 1.20.6	2024-07-22T20:21:29.1881038	Tags for minecraft:item mod id chromalchemy
+// 1.20.6	2024-07-27T11:46:16.7722347	Tags for minecraft:item mod id chromalchemy
 5db69586b6c50b2befacf44de1aedc4a5af092fe data/chromalchemy/tags/items/red_mineral.json
+c6717b499516c1dc55624aeb790f2c311ce7f2a9 data/minecraft/tags/items/trimmable_armor.json
